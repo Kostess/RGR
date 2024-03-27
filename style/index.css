@@ -126,9 +126,10 @@ button {
     font-weight: var(--fw-bold);
     line-height: 36.27px;
     display: inline-block;
+    border-radius: 5px;
 }
 
-.slide-link:hover {
+.slide-link:hover, .buy:hover {
     background: var(--bg-dark-yellow);
     transition: 0.2s;
 }
@@ -136,12 +137,12 @@ button {
 .slide-image img {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -20px;
 }
 
 .slide-image img:first-child {
     top: -75px;
-    right: -40px;
+    right: -70px;
 }
 
 .slider-indicators {
@@ -160,5 +161,76 @@ button {
 
 .indicator--active {
     background: var(--bg-black);
+}
+
+.catalog {
+    margin-top: 276px;
+}
+
+.title-block {
+    font-size: var(--fz-title-3);
+    font-weight: var(--fw-very-bold);
+    line-height: 62.4px;
+}
+
+.catalog-items {
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.catalog-card {
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 30px 0 var(--bg-dark);
+    display: grid;
+    justify-content: center;
+    padding: 15px;
+    background: var(--bg-white);
+    border-radius: 20px;
+}
+
+.media {
+    width: 100%;
+}
+
+.media img {
+    display: block;
+    margin: 0 auto;
+}
+
+.title-card {
+    text-align: center;
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-bold);
+    line-height: 30.22px;
+    align-self: end;
+    margin-top: 50px;
+}
+
+.buy {
+    display: none;
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-bold);
+    line-height: 30.22px;
+    padding: 15px 124px;
+    color: var(--bg-white);
+    background: var(--bg-yellow);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.catalog-card:hover .buy{
+    display: block;
+}
+
+.catalog-card:hover .media{
+    transform: translateY(-60px);
+    transition: 0.3s;
+}
+
+.sale {
+    margin-top: 90px;
 }
 
