@@ -1,0 +1,44 @@
+:root {
+    --fz-very-small: 1rem;
+    --fz-small: 1.125rem;
+    --fz-less-normal: 1.25rem;
+    --fz-normal: 1.5625rem;
+    --fz-more-normal: 1.875rem;
+    --fz-less-big: 2.1875rem;
+    --fz-title-1: 5rem;
+    --fz-title-2: 4.375rem;
+    --fz-title-3: 3.125rem;
+    --fz-title-4: 2.5rem;
+
+    --fw-very-bold: 900;
+    --fw-bold: 700;
+    --fw-normal: 500;
+
+    /* 29.43
+    99.84
+    32.5
+    36.27
+    62.4
+    30.22
+    42.31
+    21.76
+    21.19
+    24.18
+    16.48
+    31.2
+    29.43
+    43.68
+    23.54
+    26
+    20.8 */
+
+    --bg-yellow: #F9B300;
+    --bg-dark-yellow: #E2A300;
+    --bg-light-yellow: #FFF7E1;
+    --bg-light-gray: #F3F3F3;
+    --bg-gray: #C6C6C6;
+    --bg-dark-gray: #5B5B5B;
+    --bg-white: #fff;
+    --bg-black: #000;
+    
+}
