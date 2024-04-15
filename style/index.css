@@ -37,7 +37,7 @@ option {
     background: none;
     color: inherit;
     font: inherit;
-  }
+}
 
 .wrapper {
     background-image: url("/image/homePage/Vector.svg"), url('/image/homePage/Vector (1).svg');
@@ -257,13 +257,13 @@ option {
     transition: 0.3s;
 }
 
-.catalog-card:hover .buy{
+.catalog-card:hover .buy {
     opacity: 1;
     transform: translateY(0);
     transition: 0.3s;
 }
 
-.catalog-card:hover .card-main{
+.catalog-card:hover .card-main {
     transform: translateY(-50px);
     transition: 0.3s;
 }
@@ -304,6 +304,9 @@ option {
     background: var(--bg-yellow);
     border-radius: 50%;
     transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .arrow:hover {
@@ -314,6 +317,7 @@ option {
 .slider-group {
     display: flex;
     gap: 20px;
+    position: relative;
 }
 
 .slide-sale {
@@ -408,7 +412,7 @@ option {
     gap: 2px;
 }
 
-.rating--active path, 
+.rating--active path,
 .rating--active circle {
     fill: var(--bg-yellow);
 }
@@ -512,5 +516,89 @@ option {
 .buy-btn:hover {
     background: var(--bg-dark-yellow);
     transition: 0.3s;
+}
+
+.link-see-all {
+    font-size: var(--fz-less-normal);
+    font-weight: var(--fw-normal);
+    line-height: 23.54px;
+    position: absolute;
+    right: 0;
+    bottom: calc(-58px - 23.54px);
+    transition: 0.2s;
+}
+
+.link-see-all:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--bg-black);
+    transition: 0.2s;
+}
+
+.link-see-all:hover {
+    color: var(--bg-yellow);
+    transition: 0.2s;
+}
+
+.link-see-all:hover::after {
+    background: var(--bg-yellow);
+    transition: 0.2s;
+}
+
+.why-work {
+    background-image: url("/image/backWork.png");
+    margin-top: 199px;
+}
+
+.work-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-flex > .media {
+    margin-top: 110px;
+}
+
+.text-body {
+    margin-top: 80px;
+}
+
+.text-body-item {
+    display: flex;
+    gap: 50px;
+}
+
+.text-body-item + .text-body-item {
+    margin-top: 60px;
+}
+
+.media-work {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: var(--bg-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-item {
+    max-width: 531px;
+    width: 100%;
+}
+
+.title-record {
+    line-height: 36px;
+    font-size: var(--fz-more-normal);
+    font-weight: var(--fw-bold);
+}
+
+.record {
+    line-height: 33px;
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-normal);
+    margin-top: 20px;
 }
 
